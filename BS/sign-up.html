@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <script>
+        function validateForm() {
+            // let email = document.forms["sign_up"]["email"].value;
+            // let password = document.forms["sign_up"]["password"].value;
+
+            if (email == "") {
+                alert("คือแกยังไม่ใส่อีเมลจร้า");
+                return false;
+            }
+            if (password == "") {
+                alert("คือแกยังไม่ใส่รหัสจร้า");
+                return false;
+            }
+            if (password.length < 8) {
+                alert("Password lenght must be more 8 character ");
+                return false;
+            }
+        }
+    </script>
+
+    <title>Sign up</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-left">
+
+            <div class="info-left">
+
+
+            </div>
+
+        </div>
+        <div class="col-right">
+            <div class="logo ">
+                <a href="myweb.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="heart.gif" alt="logo" width="100" height="100">
+                </a>
+
+            </div>
+            <div class="text-detail">Tasty! I could eat it all day.</div>
+            <div class="form">
+                <form name="sign_up" action="#" onsubmit="return validateForm()" method="POST">
+                    <input type="Name " name="Name" id="Name" placeholder="Name " class="Name ">
+                    <input type="email " name="email" id="email" placeholder="Email " class="email ">
+                    <input type="password" name="password1" id="password1" placeholder="Password " class="password1">
+                    <input type="password" name="password2" id="password2" placeholder="Confirm Password " class="password2">
+                    <input type="submit" value="sign-up" class="button ">
+                </form>
+            </div>
+            <div class="text-signup ">If you have an account? Please
+                <a href="sign-in.html">Log In</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+</html>
